@@ -29,13 +29,15 @@ We performed a **Multiple Linear Regression** with an interaction term to determ
 * **Null Hypothesis ():** No interaction effect between genetic risk and smoking.
 * **Finding:** The interaction coefficient was approximately -0.000228 with a **p-value of 0.628**.
 * **Inference:** Since the p-value is greater than 0.05, we fail to reject the null hypothesis. Smoking and genetic risk act as **independent contributors** to cancer severity in this population; there is no evidence that one amplifies the other.
-![Regression Plot](https://github.com/chinmai-budati/EDA-on-Cancer-Dataset/blob/main/Ecommerce%20Dashboard.png)
+
+![Regression Test](https://github.com/chinmai-budati/EDA-on-Cancer-Dataset/blob/main/multiple_line_regression_test.png)
 
 #### 2. Demographic Distribution
 
 * **Finding:** The patient population spans from ages **20 to 89**, with a mean age of **54.4 years**.
 * **Inference:** The broad and near-normal distribution of age ensures that findings are applicable across various life stages, from young adulthood to geriatric care.
-![Age Distribution](https://github.com/chinmai-budati/EDA-on-Cancer-Dataset/blob/main/Ecommerce%20Dashboard.png)
+
+![Age Distribution](https://github.com/chinmai-budati/EDA-on-Cancer-Dataset/blob/main/age_distribution.png)
 
 #### 3. Data Quality & Reliability
 
