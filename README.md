@@ -23,32 +23,32 @@ The dataset offers a 360-degree view of cancer patient profiles, including:
 ### Key Insights & Statistical Inferences
 
 #### 1. Risk Factor Interaction (Hypothesis Testing)
-
-We performed a **Multiple Linear Regression** with an interaction term to determine if higher genetic risk amplifies the negative effects of smoking on cancer severity.
-
-* **Null Hypothesis ():** No interaction effect between genetic risk and smoking.
-* **Finding:** The interaction coefficient was approximately -0.000228 with a **p-value of 0.628**.
-* **Inference:** Since the p-value is greater than 0.05, we fail to reject the null hypothesis. Smoking and genetic risk act as **independent contributors** to cancer severity in this population; there is no evidence that one amplifies the other.
+We performed a **Multiple Linear Regression** with an interaction term to see if higher genetic risk amplifies the negative effects of smoking on cancer severity.
+* **Null Hypothesis ($H_0$):** No interaction effect between genetic risk and smoking.
+* **Finding:** The p-value was **0.628**.
+* **Conclusion:** Since $p > 0.05$, we fail to reject the null hypothesis. Smoking and genetic risk act as **independent contributors**; there is no evidence that one amplifies the other.
 
 ![Regression Test](https://github.com/chinmai-budati/EDA-on-Cancer-Dataset/blob/main/multiple_line_regression_test.png)
 
-#### 2. Demographic Distribution
 
+#### 2. Demographic Profile
 * **Finding:** The patient population spans from ages **20 to 89**, with a mean age of **54.4 years**.
-* **Inference:** The broad and near-normal distribution of age ensures that findings are applicable across various life stages, from young adulthood to geriatric care.
+* **Inference:** The broad distribution allows for reliable trend analysis across different life stages, ensuring findings are applicable to both young and geriatric populations.
 
 ![Age Distribution](https://github.com/chinmai-budati/EDA-on-Cancer-Dataset/blob/main/age_distribution.png)
 
-#### 3. Data Quality & Reliability
+#### 3. Economic Impact vs. Survival
+* **Method:** Used the **Kruskal-Wallis test** to evaluate if higher cancer stages lead to significantly greater treatment costs.
+* **Finding:** While costs scale with severity, higher treatment costs do not always show a linear correlation with longer survival, highlighting the diminishing returns of late-stage intervention.
 
-* **Finding:** The dataset was verified to have **zero duplicate records** and 50,000 unique entries.
-* **Inference:** This confirms the integrity of the data, ensuring that the results of the inferential tests and economic burden assessments are robust and reliable.
+![Economic Burden](https://github.com/chinmai-budati/EDA-on-Cancer-Dataset/blob/main/stages.png)
 
 ### Tech Stack
-
 * **Language:** Python
-* **Libraries:** Pandas, NumPy, Seaborn, Matplotlib, Statsmodels.
-* **Environment:** Jupyter Notebook.
+* **Analysis:** Pandas, NumPy
+* **Visualization:** Matplotlib, Seaborn
+* **Statistics:** Scipy, Statsmodels (OLS Regression)
+* **Machine Learning:** Scikit-learn (Random Forest)
 
 ### Repository Structure
 
