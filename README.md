@@ -28,20 +28,20 @@ We performed a **Multiple Linear Regression** with an interaction term to see if
 * **Finding:** The p-value was **0.628**.
 * **Conclusion:** Since $p > 0.05$, we fail to reject the null hypothesis. Smoking and genetic risk act as **independent contributors**; there is no evidence that one amplifies the other.
 
-![Regression Test](https://github.com/chinmai-budati/EDA-on-Cancer-Dataset/blob/main/multiple_line_regression_test.png)
+![Regression Test](https://github.com/chinmai-budati/EDA-on-Cancer-Dataset/blob/main/Images/multiple_line_regression_test.png)
 
 
 #### 2. Demographic Profile
 * **Finding:** The patient population spans from ages **20 to 89**, with a mean age of **54.4 years**.
 * **Inference:** The broad distribution allows for reliable trend analysis across different life stages, ensuring findings are applicable to both young and geriatric populations.
 
-![Age Distribution](https://github.com/chinmai-budati/EDA-on-Cancer-Dataset/blob/main/age_distribution.png)
+![Age Distribution](https://github.com/chinmai-budati/EDA-on-Cancer-Dataset/blob/main/Images/age_distribution.png)
 
 #### 3. Economic Impact vs. Survival
 * **Method:** Used the **Kruskal-Wallis test** to evaluate if higher cancer stages lead to significantly greater treatment costs.
 * **Finding:** While costs scale with severity, higher treatment costs do not always show a linear correlation with longer survival, highlighting the diminishing returns of late-stage intervention.
 
-![Economic Burden](https://github.com/chinmai-budati/EDA-on-Cancer-Dataset/blob/main/stages.png)
+![Economic Burden](https://github.com/chinmai-budati/EDA-on-Cancer-Dataset/blob/main/Images/stages.png)
 
 ### Tech Stack
 * **Language:** Python
